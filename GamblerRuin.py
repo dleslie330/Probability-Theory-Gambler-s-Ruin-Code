@@ -5,131 +5,131 @@ import random
 prime = {(1/2) : 2, (3/5) : 10, (6/11) : 11}
 
 def driver():
-    # Ruin= []
+    Ruin= []
     
-    # # plays 100000 fair games, and records how many rounds it takes for the player to become ruined in each game
-    # # note the player is not ruined every game. Num Games player is not ruined = 100000 - len(Ruin)
-    # for i in range(0, 100000):
-    #     temp = game(50, 1000, (1/2))
-    #     if (temp[0]):
-    #         Ruin.append(temp[1])
+    # plays 100000 fair games, and records how many rounds it takes for the player to become ruined in each game
+    # note the player is not ruined every game. Num Games player is not ruined = 100000 - len(Ruin)
+    for i in range(0, 100000):
+        temp = game(50, 1000, (1/2))
+        if (temp[0]):
+            Ruin.append(temp[1])
 
-    # proboutcome = len(Ruin) / 100000
-    # expected = 1 - (50 / 1050)
+    proboutcome = len(Ruin) / 100000
+    expected = 1 - (50 / 1050)
 
-    # # calculates the average number of rounds it takes the player to be ruined in a fair game with a starting wealth of 50 against 1000
-    # RuinAppAv = average(Ruin)
-    # print()
-    # print("Average rounds to be ruined (fair -  50 / 1000): ", RuinAppAv)
-    # print("\nsimulated: ", proboutcome, "\nexpected: ", expected)
+    # calculates the average number of rounds it takes the player to be ruined in a fair game with a starting wealth of 50 against 1000
+    RuinAppAv = average(Ruin)
+    print()
+    print("Average rounds to be ruined (fair -  50 / 1000): ", RuinAppAv)
+    print("\nsimulated: ", proboutcome, "\nexpected: ", expected)
 
-    # Ruin= []
+    Ruin= []
     
-    # # plays 100000 fair games, and records how many rounds it takes for the player to become ruined in each game
-    # # note the player is not ruined every game. Num Games player is not ruined = 100000 - len(Ruin)
-    # for i in range(0, 100000):
-    #     temp = game(20, 10000, (1/2))
-    #     if (temp[0]):
-    #         Ruin.append(temp[1])
+    # plays 100000 fair games, and records how many rounds it takes for the player to become ruined in each game
+    # note the player is not ruined every game. Num Games player is not ruined = 100000 - len(Ruin)
+    for i in range(0, 100000):
+        temp = game(20, 10000, (1/2))
+        if (temp[0]):
+            Ruin.append(temp[1])
 
-    # proboutcome = len(Ruin) / 100000
-    # expected = 1 - (20 / 10020)
+    proboutcome = len(Ruin) / 100000
+    expected = 1 - (20 / 10020)
 
-    # # calculates the average number of rounds it takes the player to be ruined in a fair game with a starting wealth of 50 against 1000
-    # RuinAppAv = average(Ruin)
-    # print()
-    # print("Average rounds to be ruined (fair - 20/10000): ", RuinAppAv)
-    # print("\nsimulated: ", proboutcome, "\nexpected: ", expected)
+    # calculates the average number of rounds it takes the player to be ruined in a fair game with a starting wealth of 50 against 1000
+    RuinAppAv = average(Ruin)
+    print()
+    print("Average rounds to be ruined (fair - 20/10000): ", RuinAppAv)
+    print("\nsimulated: ", proboutcome, "\nexpected: ", expected)
 
-    # Ruin= []
+    Ruin= []
     
-    # # plays 100000 fair games, and records how many rounds it takes for the player to become ruined in each game
-    # # note the player is not ruined every game. Num Games player is not ruined = 100000 - len(Ruin)
-    # for i in range(0, 100000):
-    #     temp = game(500, 1000, (1/2))
-    #     if (temp[0]):
-    #         Ruin.append(temp[1])
+    # plays 100000 fair games, and records how many rounds it takes for the player to become ruined in each game
+    # note the player is not ruined every game. Num Games player is not ruined = 100000 - len(Ruin)
+    for i in range(0, 100000):
+        temp = game(500, 1000, (1/2))
+        if (temp[0]):
+            Ruin.append(temp[1])
 
-    # proboutcome = len(Ruin) / 100000
-    # expected = 1 - (500 / 1500)
+    proboutcome = len(Ruin) / 100000
+    expected = 1 - (500 / 1500)
 
-    # # calculates the average number of rounds it takes the player to be ruined in a fair game with a starting wealth of 50 against 1000
-    # RuinAppAv = average(Ruin)
-    # print()
-    # print("Average rounds to be ruined (fair - 500/1000): ", RuinAppAv)
-    # print("\nsimulated: ", proboutcome, "\nexpected: ", expected)
+    # calculates the average number of rounds it takes the player to be ruined in a fair game with a starting wealth of 50 against 1000
+    RuinAppAv = average(Ruin)
+    print()
+    print("Average rounds to be ruined (fair - 500/1000): ", RuinAppAv)
+    print("\nsimulated: ", proboutcome, "\nexpected: ", expected)
 
-    # Ruin= []
+    Ruin= []
     
-    # # plays 100000 unfair games, and records how many rounds it takes for the player to become ruined in each game
-    # # note the player is not ruined every game. Num Games player is not ruined = 100000 - len(Ruin)
-    # for i in range(0, 100000):
-    #     temp = game(50, 1000, (3/5))
-    #     if (temp[0]):
-    #         Ruin.append(temp[1])
+    # plays 100000 unfair games, and records how many rounds it takes for the player to become ruined in each game
+    # note the player is not ruined every game. Num Games player is not ruined = 100000 - len(Ruin)
+    for i in range(0, 100000):
+        temp = game(50, 1000, (3/5))
+        if (temp[0]):
+            Ruin.append(temp[1])
 
-    # proboutcome = len(Ruin) / 100000
-    # expected = 1 - (((1 - pow((3/5)/(2/5), 50))) / (1 - pow((3/5)/(2/5), 1050)))
+    proboutcome = len(Ruin) / 100000
+    expected = 1 - (((1 - pow((3/5)/(2/5), 50))) / (1 - pow((3/5)/(2/5), 1050)))
 
-    # # calculates the average number of rounds it takes the player to be ruined in a fair game with a starting wealth of 50 against 1000
-    # RuinAppAv = average(Ruin)
-    # print()
-    # print("Average rounds to be ruined (3/5 - 50/1000): ", RuinAppAv)
-    # print("\nsimulated: ", proboutcome, "\nexpected: ", expected)
+    # calculates the average number of rounds it takes the player to be ruined in a fair game with a starting wealth of 50 against 1000
+    RuinAppAv = average(Ruin)
+    print()
+    print("Average rounds to be ruined (3/5 - 50/1000): ", RuinAppAv)
+    print("\nsimulated: ", proboutcome, "\nexpected: ", expected)
 
-    # Ruin= []
+    Ruin= []
 
-    # # plays 100000 unfair games, and records how many rounds it takes for the player to become ruined in each game
-    # # note the player is not ruined every game. Num Games player is not ruined = 100000 - len(Ruin)
-    # for i in range(0, 100000):
-    #     temp = game(500, 1000, (3/5))
-    #     if (temp[0]):
-    #         Ruin.append(temp[1])
+    # plays 100000 unfair games, and records how many rounds it takes for the player to become ruined in each game
+    # note the player is not ruined every game. Num Games player is not ruined = 100000 - len(Ruin)
+    for i in range(0, 100000):
+        temp = game(500, 1000, (3/5))
+        if (temp[0]):
+            Ruin.append(temp[1])
 
-    # proboutcome = len(Ruin) / 100000
-    # expected = 1 - (((1 - pow((3/5)/(2/5), 500))) / (1 - pow((3/5)/(2/5), 1500)))
+    proboutcome = len(Ruin) / 100000
+    expected = 1 - (((1 - pow((3/5)/(2/5), 500))) / (1 - pow((3/5)/(2/5), 1500)))
 
-    # # calculates the average number of rounds it takes the player to be ruined in a fair game with a starting wealth of 50 against 1000
-    # RuinAppAv = average(Ruin)
-    # print()
-    # print("Average rounds to be ruined (3/5 - 500/1000): ", RuinAppAv)
-    # print("\nsimulated: ", proboutcome, "\nexpected: ", expected)
+    # calculates the average number of rounds it takes the player to be ruined in a fair game with a starting wealth of 50 against 1000
+    RuinAppAv = average(Ruin)
+    print()
+    print("Average rounds to be ruined (3/5 - 500/1000): ", RuinAppAv)
+    print("\nsimulated: ", proboutcome, "\nexpected: ", expected)
 
-    # Ruin= []
+    Ruin= []
     
-    # # plays 100000 unfair games, and records how many rounds it takes for the player to become ruined in each game
-    # # note the player is not ruined every game. Num Games player is not ruined = 100000 - len(Ruin)
-    # for i in range(0, 100000):
-    #     temp = game(50, 1000, (6/11))
-    #     if (temp[0]):
-    #         Ruin.append(temp[1])
+    # plays 100000 unfair games, and records how many rounds it takes for the player to become ruined in each game
+    # note the player is not ruined every game. Num Games player is not ruined = 100000 - len(Ruin)
+    for i in range(0, 100000):
+        temp = game(50, 1000, (6/11))
+        if (temp[0]):
+            Ruin.append(temp[1])
 
-    # proboutcome = len(Ruin) / 100000
-    # expected = 1 - (((1 - pow((6/11)/(5/11), 50))) / (1 - pow((6/11)/(5/11), 1050)))
+    proboutcome = len(Ruin) / 100000
+    expected = 1 - (((1 - pow((6/11)/(5/11), 50))) / (1 - pow((6/11)/(5/11), 1050)))
 
-    # # calculates the average number of rounds it takes the player to be ruined in a fair game with a starting wealth of 50 against 1000
-    # RuinAppAv = average(Ruin)
-    # print()
-    # print("Average rounds to be ruined (6/11 - 50/1000): ", RuinAppAv)
-    # print("\nsimulated: ", proboutcome, "\nexpected: ", expected)
+    # calculates the average number of rounds it takes the player to be ruined in a fair game with a starting wealth of 50 against 1000
+    RuinAppAv = average(Ruin)
+    print()
+    print("Average rounds to be ruined (6/11 - 50/1000): ", RuinAppAv)
+    print("\nsimulated: ", proboutcome, "\nexpected: ", expected)
 
-    # Ruin= []
+    Ruin= []
     
-    # # plays 100000 unfair games, and records how many rounds it takes for the player to become ruined in each game
-    # # note the player is not ruined every game. Num Games player is not ruined = 100000 - len(Ruin)
-    # for i in range(0, 100000):
-    #     temp = game(500, 1000, (6/11))
-    #     if (temp[0]):
-    #         Ruin.append(temp[1])
+    # plays 100000 unfair games, and records how many rounds it takes for the player to become ruined in each game
+    # note the player is not ruined every game. Num Games player is not ruined = 100000 - len(Ruin)
+    for i in range(0, 100000):
+        temp = game(500, 1000, (6/11))
+        if (temp[0]):
+            Ruin.append(temp[1])
 
-    # proboutcome = len(Ruin) / 100000
-    # expected = 1 - (((1 - pow((6/11)/(5/11), 500))) / (1 - pow((6/11)/(5/11), 1500)))
+    proboutcome = len(Ruin) / 100000
+    expected = 1 - (((1 - pow((6/11)/(5/11), 500))) / (1 - pow((6/11)/(5/11), 1500)))
 
-    # # calculates the average number of rounds it takes the player to be ruined in a fair game with a starting wealth of 50 against 1000
-    # RuinAppAv = average(Ruin)
-    # print()
-    # print("Average rounds to be ruined (6/11 - 500/1000): ", RuinAppAv)
-    # print("\nsimulated: ", proboutcome, "\nexpected: ", expected)
+    # calculates the average number of rounds it takes the player to be ruined in a fair game with a starting wealth of 50 against 1000
+    RuinAppAv = average(Ruin)
+    print()
+    print("Average rounds to be ruined (6/11 - 500/1000): ", RuinAppAv)
+    print("\nsimulated: ", proboutcome, "\nexpected: ", expected)
 
     Ruin= []
     
